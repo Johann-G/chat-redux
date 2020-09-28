@@ -31,7 +31,7 @@ class MessageList extends Component {
 
   render() {
     return (
-      <div className="">
+      <div className="message-container">
         {this.props.messages.map((message, index) => {
           return <Message key={message.created_at} message={message} />;
         })}

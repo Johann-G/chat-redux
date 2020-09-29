@@ -13,56 +13,56 @@ import '../assets/stylesheets/application.scss';
 // State and reducers
 const initialState = {
   messages: [
-    {
-      "author":"anonymous92",
-      "content":"Hello world!",
-      "created_at":"2017-09-26T23:03:16.365Z"
-    },
-    {
-      "author":"anonymous92",
-      "content":"Hello world!",
-      "created_at":"2018-09-26T23:03:16.365Z"
-    },
-    {
-      "author":"anonymous92",
-      "content":"Hello world!",
-      "created_at":"2019-09-26T23:03:16.365Z"
-    },
-    {
-      "author":"anonymous92",
-      "content":"Hello world!",
-      "created_at":"2010-09-26T23:03:16.365Z"
-    },
-    {
-      "author":"anonymous92",
-      "content":"Hello world!",
-      "created_at":"2011-09-26T23:03:16.365Z"
-    },
-    {
-      "author":"anonymous92",
-      "content":"Hello world!",
-      "created_at":"2012-09-26T23:03:16.365Z"
-    },
-    {
-      "author":"anonymous92",
-      "content":"Hello world!",
-      "created_at":"2013-09-26T23:03:16.365Z"
-    },
-    {
-      "author":"anonymous92",
-      "content":"Hello world!",
-      "created_at":"2014-09-26T23:03:16.365Z"
-    },
-    {
-      "author":"anonymous92",
-      "content":"Hello world!",
-      "created_at":"2015-09-26T23:03:16.365Z"
-    },
-    {
-      "author":"anonymous92",
-      "content":"Hello world!",
-      "created_at":"2016-09-26T23:03:16.365Z"
-    }
+    // {
+    //   "author":"anonymous92",
+    //   "content":"Hello world!",
+    //   "created_at":"2017-09-26T23:03:16.365Z"
+    // },
+    // {
+    //   "author":"anonymous92",
+    //   "content":"Hello world!",
+    //   "created_at":"2018-09-26T23:03:16.365Z"
+    // },
+    // {
+    //   "author":"anonymous92",
+    //   "content":"Hello world!",
+    //   "created_at":"2019-09-26T23:03:16.365Z"
+    // },
+    // {
+    //   "author":"anonymous92",
+    //   "content":"Hello world!",
+    //   "created_at":"2010-09-26T23:03:16.365Z"
+    // },
+    // {
+    //   "author":"anonymous92",
+    //   "content":"Hello world!",
+    //   "created_at":"2011-09-26T23:03:16.365Z"
+    // },
+    // {
+    //   "author":"anonymous92",
+    //   "content":"Hello world!",
+    //   "created_at":"2012-09-26T23:03:16.365Z"
+    // },
+    // {
+    //   "author":"anonymous92",
+    //   "content":"Hello world!",
+    //   "created_at":"2013-09-26T23:03:16.365Z"
+    // },
+    // {
+    //   "author":"anonymous92",
+    //   "content":"Hello world!",
+    //   "created_at":"2014-09-26T23:03:16.365Z"
+    // },
+    // {
+    //   "author":"anonymous92",
+    //   "content":"Hello world!",
+    //   "created_at":"2015-09-26T23:03:16.365Z"
+    // },
+    // {
+    //   "author":"anonymous92",
+    //   "content":"Hello world!",
+    //   "created_at":"2016-09-26T23:03:16.365Z"
+    // }
   ],
   channels: ["general", "react", "paris"],
   selectedChannel: "general",

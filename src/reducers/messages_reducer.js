@@ -1,4 +1,8 @@
 export default function(state = null, action) {
+  if (state === undefined) {
+    return [];
+  }
+
   switch (action.type) {
 
     case "CREATE_MESSAGE": {
@@ -7,9 +11,9 @@ export default function(state = null, action) {
       return newState;
     }
 
-    // case "FETCH_MESSAGES": {
-    //   return action.payload.messages;
-    // }
+    case "FETCH_MESSAGES": {
+      return action.payload.messages;
+    }
 
     case "SELECT_CHANNEL": {
       return [];

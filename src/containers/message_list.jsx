@@ -8,34 +8,38 @@ import MessageForm from "../containers/message_form";
 
 class MessageList extends Component {
 
-  constructor(props) {
-    super(props);
-    this.textInput = React.createRef();
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.textInput = React.createRef();
+  // }
 
   componentWillMount() {
-    this.props.fetchMessages(this.props.selectedChannel);
+    this.fetchMessages();
   }
 
   componentDidMount() {
-    this.refresher = setInterval(this.props.fetchMessages, 3000);
+    this.refresher = setInterval(this.fetchMessages, 3000);
   }
 
   componentDidUpdate() {
-    this.scrollTop = this.scrollHeight;
+    this.list.scrollTop = this.list.scrollHeight;
   }
 
   componentWillUnmount() {
     clearInterval(this.refresher);
   }
 
+  fetchMessages = () => {
+    this.props.fetchMessages(this.props.selectedChannel);
+  }
+
   render() {
     return (
-      <div className="message-container">
+      <div className="message-container" ref={(list) => { this.list = list; }}>
         {this.props.messages.map((message, index) => {
           return <Message key={message.created_at} message={message} />;
         })}
-        <MessageForm ref={this.textInput} />
+        <MessageForm />
       </div>  
     );
   }

@@ -6,16 +6,24 @@ import { selectChannel } from "../actions";
 
 class ChannelList extends Component {
 
-  handleClick = () => {
-    this.props.selectChannel(this.props.selectedChannel)
+  handleClick = (channel) => {
+    this.props.selectChannel(channel)
+  }
+
+  renderChannel = (channel) => {
+    return(
+      <li onClick={() => this.handleClick(channel)} key={channel}>
+        {channel}
+      </li>
+    );
   }
 
   render() {
     return (
-      <div className="channels-container" onClick={this.handleClick}>
-        {this.props.channels.map((channel) => {
-          return channel;
-        })}
+      <div className="channels-container" >
+          <ul>
+            {this.props.channels.map(this.renderChannel)}
+          </ul>
       </div>  
     );
   }

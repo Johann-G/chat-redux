@@ -14,7 +14,7 @@ class MessageList extends Component {
   }
 
   componentWillMount() {
-    this.props.fetchMessages("general");
+    this.props.fetchMessages(this.props.selectedChannel);
   }
 
   componentDidMount() {
@@ -43,7 +43,8 @@ class MessageList extends Component {
 
 function mapStateToProps(state) {
   return {
-    messages: state.messages
+    messages: state.messages,
+    selectedChannel: state.selectedChannel
   };
 }
 
